@@ -37,6 +37,7 @@ jobs:
           HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
       - name: Add Heroku remote
         run: heroku git:remote --app 'test-bot-project'
+        run: a
         env:
           HEROKU_APP_NAME: 'test-bot-project'
       - name: Push to Heroku
